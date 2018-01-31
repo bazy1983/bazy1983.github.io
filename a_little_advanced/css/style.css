@@ -1,0 +1,121 @@
+body {
+    background: #777;
+}
+
+.container {
+    width:1000px;
+    margin: 0 auto;
+}
+
+/* header and nav Start*/
+.header .slider {
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    height: 300px;
+    margin: 0px;
+}
+
+.header .slider .intro {
+    padding-top: 115px;
+    text-align: center;
+}
+.header .nav {
+    background: #394053;
+}
+.nav .sitename {
+    text-transform: uppercase;
+    margin: 0px
+}
+
+.nav .sitename {
+    width: 20%;
+}
+
+.nav .sitename h2 {
+    margin-left: 10px;
+    color: #FFF;
+}
+
+.nav .sitename span {
+    color: rgb(9, 138, 95);
+}
+
+.nav_button {
+    width: 80%;
+    float: right;
+    text-align: right;
+}
+
+.nav_button nav {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 23px 10px;
+
+}
+
+.nav_button nav a {
+    color: #FFF;
+}
+/* header and nav end */
+
+/* main start */
+.main {
+    margin-top:5px;
+}
+
+.main .section {
+    width: 58%;
+    border: 1px dashed #000;
+    padding:10px 0;
+    text-align: center;
+    background: #FFF;
+}
+
+article {
+    margin-top:10px;
+    width:90%;
+    border: 1px dashed #000;
+    margin: auto;
+    padding:10px 0;
+}
+
+.main .aside {
+    width: 40%;
+    float: right;
+    border: 1px dashed #000;
+    text-align: center;
+    height: 268px;
+    padding-top: 10px;
+    background: #fff;
+}
+
+/* main ends */
+
+/* footer start */
+
+.footer .container {
+    background: #394053;
+}
+
+.footer p{
+    text-align: center;
+    height: 20px;
+    border: 1px solid #000;
+    padding: 10px; 
+    color:#FFF; 
+}
+
+
+/* framework */
+.overflow {
+    overflow: hidden;
+}
+
+.float_l{
+    float: left;
+}
+
+h1, h2, h3, span, a, section, article footer{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}

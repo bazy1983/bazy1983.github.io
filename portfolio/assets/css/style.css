@@ -84,7 +84,7 @@ button {
 }
 
 /* header and navigation */
-.header {
+#pageHeader {
     height: 40px;
     background: rgba(0, 0, 0, 0.5);
     margin: 35px 0;
@@ -92,26 +92,26 @@ button {
     border-bottom: 2px solid #4aaaa5
 }
 
-.img {
-    width: 30px;
+.logo {
+    width: 30%;
     float: left;
     margin: 0px;
 }
 
-.img img {
+.logo img {
     width: 190px;
     margin-top: -28px;
 }
 
-.nav {
+.pageNav {
     margin: 0px;
     color: white;
     float: right;
     transform: skew(-20deg);
 }
 
-.nav a {
-    display: inline-block;
+.pageNav a {
+    display: block;
     box-sizing: border-box;
     width: 100px;
     padding: 12px;
@@ -119,14 +119,15 @@ button {
     text-align: center;
     color: white;
     text-decoration: none;
+    float: left;
 }
 
-.nav .a:hover {
+.pageNav .a:hover {
     
 }
 
-.nav .active {
-    background: #4aaaa5
+.pageNav .active {
+    background: #4aaaa5;
 }
 
 /* main */
@@ -226,4 +227,5 @@ footer div{
     border-top: 2px solid #4aaaa5;
     border-bottom: 2px solid #4aaaa5;
     z-index: 3;
+    color: #FFF;
 }

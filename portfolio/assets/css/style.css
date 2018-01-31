@@ -1,0 +1,229 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    overflow-y: scroll;
+  }
+
+.clearfix {
+    clear: both;
+}
+
+/* scroolbar style */
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    border: 1px dashed #4aaaa5;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #4aaaa5;
+  border-radius: 10px;
+  border: 1px solid #BBB
+}
+
+
+body {
+    background-image: url("../img/wood.jpg");
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 32px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+label {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+input, textarea {
+    width: 85%;
+    padding: 8px;
+    display: block;
+    margin-left: 10px;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    width: 120px;
+    background: #4aaaa5;
+    height: 40px;
+    margin: 10px;
+
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+/* header and navigation */
+.header {
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 35px 0;
+    border-top: 2px solid #4aaaa5;
+    border-bottom: 2px solid #4aaaa5
+}
+
+.img {
+    width: 30px;
+    float: left;
+    margin: 0px;
+}
+
+.img img {
+    width: 190px;
+    margin-top: -28px;
+}
+
+.nav {
+    margin: 0px;
+    color: white;
+    float: right;
+    transform: skew(-20deg);
+}
+
+.nav a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100px;
+    padding: 12px;
+    border-left: 2px solid #4aaaa5;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.nav .a:hover {
+    
+}
+
+.nav .active {
+    background: #4aaaa5
+}
+
+/* main */
+
+.main {
+    margin-top: 10px;
+    margin-bottom: 50px;;
+    overflow: hidden;
+}
+
+.content {
+    box-sizing: border-box;
+    width: 650px;
+    background: #f8f1ec;
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.content .avater {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 250px;
+}
+
+.content .wrapper {
+    position: relative;
+    width: 40%;
+    float: left;
+    margin: 0 15px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 10px 15px;
+}
+
+.content img:hover {
+    box-shadow:5px 5px 10px;
+}
+
+.content .wrapper p {
+    position: absolute;
+    top: 195px;
+    width: 82%;    
+    background: #4aaaa5;
+    text-align: center;
+    display: block;
+    z-index: 2;
+}
+
+.content img {
+    border: 1px solid #4aaaa5;
+    transition: 0.4s;    
+}
+
+.contact {
+    box-sizing: border-box;
+    width: 270px;
+    background: #f8f1ec;
+    float: right;
+    padding: 10px;
+    overflow: hidden;
+    height: 190px;
+}
+
+.contact i {
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    width:60px;
+    font-size: 50px;
+    transition: 0.2s;
+    margin: 5px;
+    color: black;
+}
+
+.contact i:hover{
+    color: #4aaaa5;
+    font-size: 55px;
+}
+
+.main .contact .center {
+    margin: 25px 20px;
+    text-align: center;
+}
+
+/*footer */
+
+footer div{
+    position: fixed;
+    bottom: 10px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+    border-top: 2px solid #4aaaa5;
+    border-bottom: 2px solid #4aaaa5;
+    z-index: 3;
+}

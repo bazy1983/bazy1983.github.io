@@ -1,0 +1,424 @@
+
+/* general rules */
+
+html {
+    overflow-y: scroll;
+}
+
+html, body {
+    height: 95%;
+  }
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    background-image: url("../img/wood.jpg");
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 32px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+
+
+/* ======>> scroolbar style <<======= */
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    border: 1px dashed #4aaaa5;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #4aaaa5;
+  border-radius: 10px;
+  border: 1px solid #BBB
+}
+
+/* =======>> HEADER AND NAVIGATION <<======= */
+
+@media screen and (max-width: 640px) {
+    /* works only on screens smaller than 641px */
+    
+ #pageHeader {
+        height: 98px;
+    }
+
+    .particle {
+        height: 98px;
+    }
+
+    .logo {
+        width: 20%;
+        margin: auto;
+        height: 95px;
+    }
+    nav {
+      background: #4aaaa5;  
+    }
+
+    .pageNav {
+        width:60%;
+        clear: both;
+        margin-top: 6px;
+        margin-left: 30%;
+        background: #4aaaa5;
+    }
+
+    .pageNav a {
+        position: relative;
+        width: 30%;
+        padding: 10px 0;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        text-decoration: none;
+        transition: 0.5s;
+        float: left;
+        z-index: 3;
+    }
+
+    .pageNav a:hover {
+        background: #2b6663;
+        border-radius: 12px;
+    }
+
+    .pageNav .active {
+        background: #4aaaa5;
+        border-radius: 12px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 641px) { 
+    /* all header elements ramains the same 640px wide and above */
+    #pageHeader {
+        height: 40px;
+    }
+
+    .particle {
+        height: 40px;
+    }
+
+
+    .logo {
+        width: 20%;
+        margin: 0px 10px;
+        height: 95px;
+        float: left;
+    }
+
+    .logo img {
+        margin-top: -28px;
+    }
+
+    .pageNav {
+        margin: 0px 10px;
+        color: white;
+        float: right;
+        transform: skew(-20deg);
+    }
+
+    .pageNav a {
+        display: block;
+        box-sizing: border-box;
+        width: 100px;
+        padding: 12px;
+        border-left: 2px solid #4aaaa5;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+        float: left;
+    }
+
+    .pageNav a:hover {
+        background: #2b6663
+        
+    }
+
+    .pageNav .active {
+        background: #4aaaa5;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        width: 88%;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* >>>>HEADER<<<< COMMON RULES FOR ALL SCREEN SIZES */
+
+#pageHeader {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 35px 0;
+    border-top: 2px solid #4aaaa5;
+    border-bottom: 2px solid #4aaaa5;
+}
+
+.particle {
+    position: fixed;
+    width: 100%;
+    background-image: url("../img/particle.gif");
+    opacity: 0.1;
+}
+
+.logo {
+    width: 20%;
+    height: 95px;
+}
+
+    .logo img {
+        height: 100%;
+    }
+
+/* ############################################### */
+
+/* ======>> main <<====== */
+.main {
+    min-height: 81%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.content {
+    box-sizing: border-box;
+    width: 650px;
+    background: #f8f1ec;
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.content .avater {
+
+    margin: 0 10px 10px 0;
+    width: 250px;
+    float: left;
+}
+
+.content .wrapper {
+    position: relative;
+    width: 40%;
+    float: left;
+    margin: 10px 30px;
+    overflow: hidden;
+    z-index: 1; 
+    border: 1px solid #4aaaa5;
+    transition: 0.4s; 
+}
+
+.content .wrapper:hover {
+    box-shadow:5px 5px 10px;
+}
+
+.content .wrapper p {
+    position: absolute;
+    top: 75%;
+    width: 100%;    
+    background: #4aaaa5;
+    text-align: center;
+    display: block;
+    z-index: 2;
+}
+
+.content img {
+    width: 100%
+   
+}
+
+.contact {
+    box-sizing: border-box;
+    width: 270px;
+    background: #f8f1ec;
+    float: right;
+    padding: 10px;
+    overflow: hidden;
+    height: 190px;
+    border-radius: 10px;
+}
+
+.main .contact .center {
+    margin: 30px 0 0 14%;
+    text-align: center;
+}
+
+.contact i {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    font-size: 50px;
+    transition: 0.2s;
+    margin: 0 3%;
+
+    color: black;
+}
+
+.contact i:hover{
+    color: #4aaaa5;
+    font-size: 55px;
+}
+
+label {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+input, textarea {
+    width: 85%;
+    padding: 8px;
+    display: block;
+    margin-left: 10px;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    width: 120px;
+    background: #4aaaa5;
+    height: 40px;
+    margin: 10px;
+
+}
+
+@media screen and (max-width:640px) {
+    .content {
+        width:100%;
+        float: none;
+        padding: 0px;
+        margin-bottom: 15px;
+    }   
+
+    .content .avater {
+        width: 80%;
+        float: none;
+        margin-left: 10%;
+    }
+    
+    .content .wrapper {
+        width: 80%;
+        margin: 10%;
+        float: none;
+    }
+
+    .content .wrapper p {
+        top: 80%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .main .contact .center {
+        margin: 30px 0 0 33%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width:768px) {
+    .content {
+        width:100%;
+        float: none;
+        padding: 0px;
+        margin-bottom: 15px;
+    }   
+    
+    .content .wrapper {
+        width: 39%;
+        margin: 5%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .main .contact .center {
+        margin: 30px 0 0 33%;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width:980px) {
+    .content {
+        width:60%; 
+    }
+
+    .content .avater {
+        width: 80%;
+        float: none;
+        margin-left: 10%;
+    }
+
+    .content .wrapper {
+        width: 60%;
+        margin-left: 20%;
+    }  
+
+    .contact {
+            width: 250px;
+        }
+
+    .main .contact .center {
+        margin: 30px 0 0 18%;
+    }
+}
+
+
+/* ########################################## */
+
+/* ======>> footer <<====== */
+
+footer {
+    margin-bottom: 10px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 10px;
+    border-top: 2px solid #4aaaa5;
+    border-bottom: 2px solid #4aaaa5;
+    color: #FFF;
+}
+
+
+/* framework */
+
+.container
+{
+    margin: auto;
+}
+

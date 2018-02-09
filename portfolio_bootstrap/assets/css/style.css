@@ -44,22 +44,27 @@ body {
     background: #4aaaa5;
     border-radius: 10px;
 }
+
+
 @media screen and (max-width: 576px) {
     .nav {
+        margin-left: 10vw !important;
         margin-top: 3%!important;
         font-weight: bold !important;
-        margin-left: 23% !important;
+        
     }
 
     .nav-item a { 
     color: #000 !important;
     }
 }
+
 @media screen and (max-width: 767px) {
     .logo {
+        position: relative;
         margin-top: 18px;
-        margin-left: 30%;
-    }
+        left:20vw;
+        }
 
     .nav {
         margin-top: 3%!important;

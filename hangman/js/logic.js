@@ -11,6 +11,7 @@ var categoryArray = ["Car make", "Fruit", "Country", "Female Celebrity", "Male C
     ],
     informationBubble = {
         helloStatement : "Hello, I'm your Information bubble, I'm your friend!",
+        note: "Please zoom out if this bubble doesn't show up at the bottom of the page.",
         correctGuess: ["Awesome!", "Good job!", "Nicely done!"],
         wrongGuess: ["It's Okay, try again", "Oops!", "Things happen, you know!"],
         invalidKey: " is invalid input!"
@@ -151,4 +152,7 @@ function informationfunction(text) {
 
 informationfunction(informationBubble.helloStatement);
 
+setTimeout(function() { 
+    informationfunction(informationBubble.note)
+}, 4000);
 

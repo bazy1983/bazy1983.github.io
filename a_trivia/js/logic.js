@@ -6,7 +6,8 @@ $(document).ready(function (){
             arrAnswer = [],
             correctAnswer = 0,
             incorrectAnswer = 0,
-            unanswered = 0;
+            unanswered = 0,
+            audio = new Audio ("./media/click.mp3")
             $(".circle_animation").css("stroke-dashoffset", 0);
             $("h3").text(time);
             
@@ -61,6 +62,7 @@ $(document).ready(function (){
     
         $(".choices").on("click", "button", function(){ // ###### ON CLICK EVENT
             arrAnswer[$(this).attr("value")] = $(this).text(); // add that answer to array
+            audio.play();
             questionExpired();
         });
 

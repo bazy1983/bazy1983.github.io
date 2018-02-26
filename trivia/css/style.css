@@ -1,0 +1,81 @@
+body {
+    background-image: url("https://www.marvin.com/images/content/prodMaterials-wood-integrity.jpg");
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+input {
+    margin-right : 10px;
+}
+
+.txtred {
+    color: rgb(77, 4, 4);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.timer {
+    background: #000;
+    width: 100px;
+    height: 30px;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+    color: #FFF;
+    font-style: italic;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.screen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.438);
+    display: none;
+     
+}
+
+.results {
+    opacity: 1!important;
+    position: fixed;
+    width: 350px;
+    height: 237px;
+    background: rgb(35, 146, 150);
+    left: 38%;
+    top: 37%;  
+    border-radius: 10px;
+    border: 2px solid #555; 
+}
+
+.animate {
+    animation: slideDown 2s 
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        top: 27%
+    }
+    100% {
+        opacity: 1;
+        top:37%;
+    }
+}
+
+.results h2 {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.answerText {
+    padding: 10px 0 0 10px;
+}

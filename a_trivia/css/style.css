@@ -85,6 +85,6 @@ svg {
 .circle_animation {
   stroke-dasharray: 189; /* this value is the pixel circumference of the circle */
   stroke-dashoffset: 0;
-  transition: all 0.3s linear;
+  transition: all 1s linear;
 }
 /*time circle style END*/

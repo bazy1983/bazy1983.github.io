@@ -1,0 +1,155 @@
+body{
+    height: 100%;
+    background: #79bd8e;
+    transition: 1s;
+}
+
+.topSpace {    
+    width: 100%;
+    height: 15vh;
+    z-index: 1;
+ 
+}
+
+/* ############# About me card ######## */
+.topSpace img {
+    position: relative;
+    left:7%;
+    top:13%;
+    width: 190px;
+    animation: glowBeat 3s infinite;
+ 
+}
+
+.box {
+    width : 100%;
+    height: 85vh;
+    overflow: auto;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    background: #EEE;
+    border: 3px solid #CCC;
+    z-index: 1;
+    margin-top: 3%;  
+    padding: 30px 0;
+    box-shadow: 5px 5px 10px #000;  
+}
+
+.label { /* label that goes on top of each card*/
+    position: absolute;
+    background: #79bd8e;
+    width: 200px;
+    border: 3px solid #CCC;
+    border-radius: 15px;
+    top: -20px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s;
+    padding-left: 25px;
+}
+
+.label:hover{
+    padding-left: 45px;
+}
+
+
+.aboutMe em {
+    position: relative;
+    padding-left: 17px;
+    top: -3px
+}
+
+/* ######## Portfolio  ######### */
+
+#work .project {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+}
+
+#work .project .grayscale{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    transition: 0.5s
+}
+
+#work .project .grayscale:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+}
+
+#work .project .img_title {
+    position: absolute;
+    bottom: -66px;
+    background: rgba(0, 0, 0, 0.658);
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-style: italic;
+    line-height: 50px;
+    transition: 0.5s
+}
+
+#work .project:hover .img_title {
+    bottom:-16px;
+}
+
+
+
+
+
+/* ########### Testimonial ############# */
+
+.fixedHeight {
+    height: 500px;
+}
+
+.person_img {
+    float: right;
+    width: 150px;
+    border: 2px solid #AAA;
+    border-radius: 100%;
+}
+
+/* ####### special ########## */
+.pageName{
+    position: absolute;
+    right: 1%;
+    top: -8%;
+    font-size: 210px;
+    font-weight: bolder;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 27px;
+    opacity: 0.2;
+    z-index: 0;
+    transition: 1s;
+}
+
+@keyframes glowBeat {
+    0% {
+        -webkit-filter: drop-shadow(0 0 0 transparent);
+        -ms-filter: drop-shadow(0 0 0 transparent);
+        filter: drop-shadow(0 0 0 transparent);
+    }
+    50% {
+        -webkit-filter: drop-shadow(0 0 5px #00F);
+        -ms-filter: drop-shadow(0 0 5px #00F);
+        filter: drop-shadow(0 0 5px #00F);
+    }
+    to {
+        -webkit-filter: drop-shadow(0 0 0 transparent);
+        -ms-filter: drop-shadow(0 0 0 transparent);
+        filter: drop-shadow(0 0 0 transparent);
+    }
+}

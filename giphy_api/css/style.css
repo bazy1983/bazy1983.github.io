@@ -1,0 +1,62 @@
+body {
+    background: #eee;
+}
+
+/*header style*/
+header {
+    padding: 10px;
+}
+.dropdown {
+    width: 45px;
+    height: 38px;
+    border: 1px solid var(--blue);
+    border-radius: 5px 0 0 5px;
+}
+
+
+/*history box*/
+.ajaxHistory{
+    margin: 5px 5px 5px;
+}
+
+/*main body*/
+.controls {
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.img_result {
+    width: 90%;
+    padding: 5%;
+}
+
+
+.history {
+
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding:5px;
+    min-height: 50px;
+}
+
+.pageNumber {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    position: relative;
+    left: -4px;
+}
+
+.page {
+    display: inline-block;
+    font-size: 25px;
+    margin: 20px -1px;
+    width: 75px;
+    font-style: italic;
+    background: linear-gradient(#aaa, #eee, #aaa);
+    padding: 5px 16px;
+    border: 1px solid #888;
+}

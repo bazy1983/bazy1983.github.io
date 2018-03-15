@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="text-center">
+        <h1>Rock - Paper - Scissors</h1>
+    </div>
+    <div class="container">
+        <div class="player text-center my-3">
+            <label for="player" class="lead font-weight-bold">Your Name:</label>
+            <input type="text" name="player" id="playerName">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="row">
+            <div id="player0" class="col-sm-4">
+                <div class="card bg-warning mb-3 ml-4" style="max-width: 18rem;">
+                    <div class="p0 card-header lead font-italic font-weight-bold">PLAYER</div>
+                    <div class="card-body text-center">
+                        <i data="0" class="rps fas fa-hand-rock hidden"></i>
+                        <br>
+                        <i data="1" class="rps fas fa-hand-paper hidden"></i>
+                        <br>
+                        <i data="2" class="rps fas fa-hand-scissors hidden"></i>
+                        <div class="results mt-2">
+                            <div class="win float-left">
+                                <i class="pl-5 thumb fas fa-thumbs-up"></i>
+                                <span id = "p0w">0</span>
+                            </div>
+                            <div class="lose">
+                                <i class="thumb fas fa-thumbs-down"></i>
+                                <span id = "p0l">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="p0guess">
+                    
+                </div>
+                <div class="p1guess">
+                    
+                </div>
+                <div id="result">
+                    
+                </div>
+                
+            </div>
+
+            <div id="player1" class="col-sm-4">
+                <div class="card bg-success  mb-3 ml-4" style="max-width: 18rem;">
+                    <div class="p1 card-header lead font-italic font-weight-bold">PLAYER</div>
+                    <div class="card-body text-center">
+                        <i data="0" class="rps fas fa-hand-rock hidden"></i>
+                        <br>
+                        <i data="1" class="rps fas fa-hand-paper hidden"></i>
+                        <br>
+                        <i data="2" class="rps fas fa-hand-scissors hidden"></i>
+                        <div class="results mt-2">
+                            <div class="win float-left">
+                                <i class="pl-5 thumb fas fa-thumbs-up"></i>
+                                <span id = "p1w">0</span>
+                            </div>
+                            <div class="lose">
+                                <i class="thumb fas fa-thumbs-down"></i>
+                                <span id = "p1l">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat dropshadow">
+                <div class="room d-flex flex-column justify-content-end flex">
+                    <!-- chat goes here -->
+                </div>
+                <div class="chatbox">
+                    <div class="input-group mb-3">
+                        <input id="chatinput" type="text" class="form-control" placeholder="chat box" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button id="chat" class="btn btn-outline-secondary" type="button">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+        <script src="./js/logic.js"></script>
+</body>
+
+</html>
